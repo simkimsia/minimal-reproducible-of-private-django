@@ -1,0 +1,127 @@
+pytz==2020.1  # https://github.com/stub42/pytz
+python-slugify==4.0.1  # https://github.com/un33k/python-slugify
+Pillow==7.2.0  # https://github.com/python-pillow/Pillow
+argon2-cffi==20.1.0  # https://github.com/hynek/argon2_cffi
+redis==3.5.3  # https://github.com/andymccurdy/redis-py
+
+# Django
+# ------------------------------------------------------------------------------
+django==2.2.16  # https://www.djangoproject.com/
+django-environ==0.4.5  # https://github.com/joke2k/django-environ
+django-model-utils==4.0.0  # https://github.com/jazzband/django-model-utils
+django-allauth==0.42.0  # https://github.com/pennersr/django-allauth
+django-crispy-forms==1.9.2  # https://github.com/django-crispy-forms/django-crispy-forms
+django-redis==4.12.1  # https://github.com/niwinz/django-redis
+django-extensions==3.0.9  # https://github.com/django-extensions/django-extensions
+
+# Django REST Framework
+# ------------------------------------------------------------------------------
+djangorestframework==3.11.1 # https://github.com/encode/django-rest-framework
+coreapi==2.3.3  # WARNING: "This repository has been archived by the owner. It is now read-only."  # https://github.com/core-api/python-client
+django-rest-auth==0.9.5  # https://github.com/Tivix/django-rest-auth  # Django powered SPA's / mobile apps exposing all registration & authentication related functionality as CBV's (Class Base View) and REST (JSON)
+djangorestframework-jsonapi==3.2.0 # https://github.com/django-json-api/django-rest-framework-json-api
+# dynamic-rest==1.9.8
+# git+git://github.com/AltSchool/dynamic-rest@v1.9.8#egg=dynamic-rest # https://github.com/AltSchool/dynamic-rest
+# because this branch fixes the jsonfield filter issue
+git+git://github.com/simkimsia/dynamic-rest@v0.1-jsonfield#egg=dynamic-rest # https://github.com/simkimsia/dynamic-rest
+
+# Filter
+# ------------------------------------------------------------------------------
+django-filter==2.4.0
+
+# Partial Index
+# ------------------------------------------------------------------------------
+django-partial-index==0.6.0
+
+# countries
+# ------------------------------------------------------------------------------
+django-countries==6.1.3
+
+# Psycopg2
+# ------------------------------------------------------------------------------
+psycopg2==2.8.6 --no-binary psycopg2  # https://github.com/psycopg/psycopg2
+
+# django-appconfig see https://django-appconf.readthedocs.io/en/latest/#
+django-appconf==1.0.4
+
+# Django Client - Build Activity Feeds & Streams with GetStream.io
+stream-django==1.6.2
+
+# CleanerVersion
+CleanerVersion==2.1.1
+
+# Django MPTT
+django-mptt==0.11.0
+# Django Recursive
+djangorestframework-recursive==0.1.2
+
+# Django Rules
+# ------------------------------------------------------------------------------
+rules==2.2
+django-rest-framework-rules==1.0.0
+
+# CORS headers (temporarily not include first)
+# ------------------------------------------------------------------------------
+# django-cors-headers==3.2.0
+
+# openpyxl
+openpyxl==3.0.5
+
+# rest-framework-generic-relations
+rest-framework-generic-relations==2.0.0
+
+# Async related libraries such as celery and redis and channels
+# ------------------------------------------------------------------------------
+celery[redis]==4.4.7 # https://github.com/celery/celery
+channels==2.4.0  # https://github.com/django/channels
+channels-redis==3.1.0  # https://github.com/django/channels_redis
+
+# pandas==0.25.1 # cannot use pandas with alpine docker image
+
+# Django Lifecycle
+# ------------------------------------------------------------------------------
+django-lifecycle==0.7.7  # https://github.com/rsinger86/django-lifecycle
+
+# boltons is a useful python utilities
+# ------------------------------------------------------------------------------
+boltons==20.2.1 # https://github.com/mahmoud/boltons python super utils
+
+# honeycomb
+# ---------------------------------------------------------------------------------------------
+honeycomb-beeline==2.13.1
+
+# benedict (because it has a friendly way to get nested dict using . as separator in key path)
+# ---------------------------------------------------------------------------------------------
+python-benedict==0.21.1
+
+# inflector (for converting underscore to human capitalized and other conversions)
+# ---------------------------------------------------------------------------------------------
+Inflector==3.0.1
+
+# ltree
+# ------------------------------------------------------------------------------
+django-ltree==0.5.2 # https://github.com/mariocesar/django-ltree
+
+# pydantic
+# ------------------------------------------------------------------------------
+pydantic==1.6.1 # https://github.com/samuelcolvin/pydantic
+
+# django-model-values (for better update query without going through django ORM save() method)
+# ---------------------------------------------------------------------------------------------
+django-model-values==1.2 # https://github.com/coady/django-model-values
+
+# django-fsm (use it just to use FSMFieldMixin in my own OMHSM)
+# ---------------------------------------------------------------------------------------------
+django-fsm==2.7.0 # https://github.com/viewflow/django-fsm
+
+# django-reversion (experiment to setup changes under rea app)
+# ---------------------------------------------------------------------------------------------
+django-reversion==3.0.8 # https://github.com/etianen/django-reversion
+
+# django-dirtyfields (experiment to stop saves that are clean saves)
+# ---------------------------------------------------------------------------------------------
+django-dirtyfields==1.4  # https://github.com/romgar/django-dirtyfields
+
+# django-computedfields (experiment with hierarchical linkage)
+# ---------------------------------------------------------------------------------------------
+django-computedfields==0.1.3  # https://github.com/netzkolchose/django-computedfields
