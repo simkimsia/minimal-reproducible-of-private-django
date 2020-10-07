@@ -26,6 +26,8 @@ RUN sudo apt-get clean
 # need to run as root else curl and install won't work
 USER root
 
+# This runs thru the installer https://github.com/jpillora/installer
+# and caching may be an issue https://github.com/jpillora/installer/issues/9
 RUN curl https://i.jpillora.com/chisel! | bash
 
 # need to switch back to gitpod
